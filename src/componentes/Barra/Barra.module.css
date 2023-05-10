@@ -1,0 +1,83 @@
+.div {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.806);;
+    width: 100%;
+    display: flex;
+    top: 0px;
+    z-index: 999;
+}
+
+.containerLogo{
+    position: absolute;
+    height: 100%;
+    margin-left: 150px;
+    display: flex;
+}
+
+.icono{
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 20%;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.logo{
+    position: relative;
+    color: white;
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gorro{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.containerLista{
+    position: relative;
+    height: 100%;
+    margin-left: 900px;
+    align-items: center;
+}
+
+.span{
+    color: rgb(141, 183, 229);
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    background-color: rgb(141, 183, 229);
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: .4s;    
+    margin: 0;
+}
+.Mini{
+    margin-right: 15px;
+}
+.li{
+    font-size: 30px;;
+    position: relative;
+    margin: 0 auto;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+button{
+    cursor: pointer;
+}
