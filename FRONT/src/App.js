@@ -6,7 +6,7 @@ import Inicio from "./componentes/Inicio/inicio";
 import CrearReceta from "./componentes/CrearReceta/CrearReceta";
 import React from "react";
 import Detalles from "./componentes/Detalles/Detalles";
-import Nuevo from "./componentes/Nuevo/Nuevo"
+import Nuevo from "./componentes/Nuevo/Nuevo";
 
 function App() {
   return (
