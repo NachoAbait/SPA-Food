@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState , useRef} from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { getDiets, postRecipe } from "../../ACTIONS";
 import css from "./CrearReceta.module.css"
 import { validate } from "./validador";
-
+import Barra from "../Barra/Barra"
+import Footer from "../Footer/Footer"
 
 export default function CrearReceta() {
     
@@ -85,16 +85,22 @@ export default function CrearReceta() {
             
         
     }
-    
+    /*////////////////////////////////////////////////////////////// */
+     const formRef = useRef(null);
 
+     useEffect(() => {
+        formRef.current.classList.add(css.aparece);
+      }, []);
+    
     // acá va tu código
     return (
         <div className={css.div}>
-            <div className={ css.form}>
+            <Barra></Barra>
+            <div className={ css.form} ref={formRef}>
                 <h1 className={ css.titulo}>CREA TU RECETA! </h1>
                 <hr />
                 <br />
-            <form onSubmit={(e) => handleSubmit(e)}>
+            <form onSubmit={(e) => handleSubmit(e)} >
                     
                 <div>
                     <label className={css.input}><b>Nombre:</b></label>
@@ -117,9 +123,9 @@ export default function CrearReceta() {
                 <br />
 
                 <div>
-                    <label className={css.input}><b>Nivel de "comida saludable":</b></label>
+                    <label className={css.input}><b>Nivel saludable (0-100):</b></label>
                     &nbsp;&nbsp;&nbsp;
-                    <input type="number" min="1" max="100" value={input.saludable} name="saludable" onChange={(e) => handleChange(e)} />
+                        <input clasName={css.box} type="number" min="1" max="100" value={input.saludable} name="saludable" onChange={(e) => handleChange(e)} />
                     {errors.saludable ?
                     (<h4><small>{errors.saludable}</small></h4>) :
                     (false)}    
@@ -151,17 +157,27 @@ export default function CrearReceta() {
                     
                 <select onChange={(e) => handleSelect(e)}>
                     {diets.map((diet) => (
-                        <option value={diet.name}> {diet.name}</option>
+                        <option clasName={css.opcion} value={diet.name}> {diet.name}</option>
                     ))}
                 </select>
                 <ul><li>{input.dietas.map(e => e + " ,")}</li></ul>
                 
                     <br />
-                <button type="submit"> Crear receta </button>
+                    <button className={css.btn} type="submit"> Crear receta </button>
             </form>
+            </div>
+            <div className={css.containerFooter}>
+               <Footer></Footer>
+             </div>
+            <div className={css.containerAnimacion1}>
+                <iframe clasName={css.animacion} src="https://embed.lottiefiles.com/animation/129834"></iframe>
+            </div>
+            <div className={css.containerAnimacion2}>
+            <iframe clasName={css.animacion} src="https://embed.lottiefiles.com/animation/129834"></iframe>
             </div>
             
         </div>
+       
     
     )
       
