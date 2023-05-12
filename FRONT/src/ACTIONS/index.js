@@ -84,3 +84,16 @@ export function getDetalle(id) {
     }
   };
 }
+
+  export function resetDetalle() {
+    return async function (dispatch) {
+      try {
+        return dispatch({
+          type: "RESET_DETALLE",
+          payload: "",
+        });
+      } catch (error) {
+        return { msg: error };
+      }
+    };
+}

@@ -1,6 +1,9 @@
 .btn {
-    color: grey;
-    background-color:rgb(3, 35, 54);
+    color: black;
+    background-color:red;
+    height:47px;
+    align-items: center;
+    justify-content: center;
 }
 
 

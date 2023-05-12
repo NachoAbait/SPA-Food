@@ -1,17 +1,14 @@
 
 .cardImg {
-    border-radius: 15px;
     background-color: grey;
     height: 200px;
     margin-bottom: 20px;
-    margin-top: 20px;
     background-size: cover;
-    
 }
 
 .card{
     position: relative;
-    width: 300px;
+    width: 500px;
     height: 350px;
     margin: 30px;
 }
@@ -45,7 +42,7 @@
     height: 45px;
     line-height: 45px;
     color: #fff;
-    background: rgb(0, 0, 0,.4);
+    background: rgb(141, 183, 229);
     text-align: center;
 }
 
@@ -55,7 +52,7 @@
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: rgb(141, 183, 229);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -72,16 +69,20 @@
 }
 
 .card .back .link a {
-    color:#f3f3f3;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;;
 }
 
 .card .back h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
 
-.card .back p {
+.card .back span {
+    font-size: medium;
+    font-weight: bold;
     letter-spacing: 1px;
 }
 

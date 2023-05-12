@@ -52,11 +52,13 @@ ul li{
     margin-bottom: 20px;
 }
 
-select{
+.select{
     border-radius: 5px;
     height: 30px;
     font-size: large;
-    text-align: center
+    text-align: center;
+    font-weight: bold;
+
 }
 .containerAnimacion1{
     position: absolute;

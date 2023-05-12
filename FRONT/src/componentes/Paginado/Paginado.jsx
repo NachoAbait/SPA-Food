@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState , useRef} from "react"
 import css from "../Paginado/Paginado.module.css"
 
 export default function Paginado({recetasPorPagina, allRecetas, paginado}) {
@@ -8,12 +8,18 @@ export default function Paginado({recetasPorPagina, allRecetas, paginado}) {
         numeroPagina.push(i + 1)
     }
 
+    const recetasRef = useRef(null);
+
+    useEffect(() => {
+       recetasRef.current.classList.add(css.aparece);
+     }, []);
+   
     return (
-        <nav className={css.paginado}>
+        <nav className={css.paginado} ref={recetasRef}>
             <ul className={ css.numeros}>
                 {numeroPagina && numeroPagina.map(numero => (
                     <li key={numero} className={css.numero}>
-                        <a onClick={() => paginado(numero)}> {numero}</a>
+                        <a onClick={() => paginado(numero)} className={css.numerin}> {numero}</a>
                     </li>
                 ))}
             </ul>

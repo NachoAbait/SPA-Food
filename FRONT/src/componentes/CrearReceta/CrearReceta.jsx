@@ -155,7 +155,7 @@ export default function CrearReceta() {
                 <label className={css.input}><b>Dietas:</b></label>
                     &nbsp;&nbsp;&nbsp;
                     
-                <select onChange={(e) => handleSelect(e)}>
+                    <select onChange={(e) => handleSelect(e)} className={css.select}>
                     {diets.map((diet) => (
                         <option clasName={css.opcion} value={diet.name}> {diet.name}</option>
                     ))}

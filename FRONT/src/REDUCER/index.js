@@ -99,6 +99,11 @@ function rootReducer(state = initialState, action) {
         ...state,
         detalle: action.payload,
       };
+    case "RESET_DETALLE":
+      return {
+        ...state,
+        detalle: {}
+      }
 
     default:
       return {

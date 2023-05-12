@@ -14,7 +14,7 @@ export default function Tarjeta({ imagen, nombre , dieta, id, saludable}) {
         
         <div className={`${css.face} ${css.back}`}>
           <h3 className={ css.title}>{ nombre}</h3>
-          <p className={css.dieta}> <span className={css.span}>Dietas:</span> {dieta + " "}</p>
+          <h4 className={css.dieta}> <span className={css.span}>Dietas:</span> {dieta + " "}</h4>
           <p><span className={css.span}>Saludable:</span> {saludable}</p>
           <div className={css.link}>
             <Link to={ `/recetas/${id}`} >
