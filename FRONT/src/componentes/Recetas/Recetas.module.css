@@ -62,6 +62,6 @@
 
 .aparece{
     opacity: 1;
-    transition: 6s;
-    transform: translateY(-50px);
+    transition: 5s;
+    transform: translateY(-40px);
 }

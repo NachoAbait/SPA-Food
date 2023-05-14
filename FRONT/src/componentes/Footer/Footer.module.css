@@ -1,7 +1,53 @@
 .container{
-    display: flex;
+    display: flex-box;
     position: relative;
     background-color: rgba(0, 0, 0, 0.806);
     width: 100%;
     height: 200px;
+}
+
+.containerLogo{
+    position: relative;
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.icono{
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 20%;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.logo{
+    position: relative;
+    color: white;
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.gorro{
+    width: 100%;
+    height: 70px;
+}
+
+.grid{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.col{
+    margin: 0 auto;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+.col a{
+    color: rgb(141, 183, 229);
 }

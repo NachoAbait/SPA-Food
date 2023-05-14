@@ -7,6 +7,7 @@ import React, { useEffect, useState , useRef} from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getRecipes , filterRecetaByDiet , filterByLocation, orderRecipeByName} from "../../ACTIONS"
 import Barra from "../Barra/Barra"
+import Footer from "../Footer/Footer"
 
 export default function Recetas() {
   
@@ -62,7 +63,7 @@ export default function Recetas() {
     return (
       <div className={css.div} >
         <Barra></Barra>
-        <div className={css.menuSup} ref={recetasRef}>
+        { recetaActual.length ? <div className={css.menuSup} ref={recetasRef}>
           <br />
             <button clasName={css.btn} onClick={e => { handleClick(e) }}> Recargar recetas</button>
           <br />
@@ -110,13 +111,14 @@ export default function Recetas() {
             
             
             </div>
-        </div>
+        </div>: <iframe src="https://embed.lottiefiles.com/animation/143548"></iframe>}
+        
           <Paginado recetasPorPagina={recetasPorPagina} allRecetas={allRecetas.length} paginado={paginado} />
 
           <div className={css.tarjetas} ref={recetasRef}>
           {recetaActual.map(e => <Tarjeta saludable={e.saludable} imagen={e.img} nombre={e.nombre ? e.nombre : e.name} dieta={e.dieta? e.dieta : e.Diet_Types.map(e=> e.name)} id={e.id} key={e.id}/>)}
           </div>
-            
+            <Footer></Footer>
         </div>
       
     )

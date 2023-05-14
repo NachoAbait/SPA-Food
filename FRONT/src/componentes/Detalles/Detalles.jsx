@@ -30,8 +30,8 @@ export default function Detalles(props) {
 
         
         <div className={css.div}>
-           <Barra></Barra>
-            <div className={css.detalle}>
+            <Barra></Barra>
+            { elDetalle.img ?  <div className={css.detalle}>
                 
                 <div className={css.containerImg}>
                     <img src={elDetalle.img} />
@@ -42,17 +42,20 @@ export default function Detalles(props) {
                         <h1 className={css.nombre}>{elDetalle.nombre}</h1>
                     </div>
                     <div className={css.containerSubtitulo}>
-                        <h2><span className={css.h2}>Tipo de plato: </span> {elDetalle.tipoDePlato}</h2>
+                        { elDetalle.tipoDePlato? <h2><span className={css.h2}>Tipo de plato: </span> {elDetalle.tipoDePlato}</h2>: null}
+                        
                     </div>
                     
                     <div className={css.containerSaludable}>
-                        <h2><span className={css.h2}>Nivel saludable:</span> {elDetalle.saludable}</h2>
+                        {elDetalle.saludable ? <h2><span className={css.h2}>Nivel saludable:</span> {elDetalle.saludable}</h2>: null}
+                        
                     </div>
                     
                     <div className={css.containerDieta}>
-                        <h2><span className={css.h2}>Dietas:  </span> {elDetalle.diets ? elDetalle.diets.map((i) => {
+                    {elDetalle.diets ?  <h2><span className={css.h2}>Dietas:  </span> {elDetalle.diets ? elDetalle.diets.map((i) => {
                             return i + ", "
-                        }): null}</h2>
+                        }): null}</h2>: null}
+                       
                     </div>
                     </div>
                 <div className={css.containerResumen}>
@@ -66,7 +69,8 @@ export default function Detalles(props) {
                 
 
             </div>
-
+: <iframe src="https://embed.lottiefiles.com/animation/143548"></iframe>}
+           
             
         </div>
     )
