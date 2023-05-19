@@ -9,8 +9,8 @@
 
 .containerLogo{
     position: absolute;
-    height: 100%;
-    margin-left: 150px;
+    height: 90%;
+    margin-left: 5%;
     display: flex;
 }
 
@@ -26,7 +26,7 @@
 .logo{
     position: relative;
     color: white;
-    font-size: 70px;
+    font-size: 350%;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -41,7 +41,7 @@
 .containerLista{
     position: relative;
     height: 100%;
-    margin-left: 900px;
+    margin-left: 40%;
     align-items: center;
 }
 
@@ -62,7 +62,7 @@ button {
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 65%;
     transition: .4s;    
     margin: 0;
 }
@@ -70,7 +70,7 @@ button {
     margin-right: 15px;
 }
 .li{
-    font-size: 30px;;
+    font-size: 140%;
     position: relative;
     margin: 0 auto;
     list-style-type: none;

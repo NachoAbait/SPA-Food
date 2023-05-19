@@ -3,12 +3,12 @@
     position: relative;
     background-color: rgba(0, 0, 0, 0.806);
     width: 100%;
-    height: 200px;
+    height: 120px;
 }
 
 .containerLogo{
     position: relative;
-    width: 400px;
+    width: 300px;
     display: flex;
     margin: 0 auto;
 }
@@ -25,25 +25,25 @@
 .logo{
     position: relative;
     color: white;
-    font-size: 70px;
+    font-size: 300%;
     margin-top: 0;
     margin-bottom: 0;
 }
 .gorro{
     width: 100%;
-    height: 70px;
+    height: 40px;
 }
 
 .grid{
     display: flex;
     width: 80%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .col{
     margin: 0 auto;
-    font-size: larger;
+    font-size: medium;
     font-weight: bold;
     color: white;
 }

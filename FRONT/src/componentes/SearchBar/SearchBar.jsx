@@ -26,7 +26,7 @@ export default function SearchBar({ onSearch }) {
   // acá va tu código
   return (
     <div>
-      <input type="text" placeholder="Receta..." value={nombreReceta} onChange={(e) => handleInputChange(e)} />
+      <input className={css.input} type="text" placeholder="Receta..." value={nombreReceta} onChange={(e) => handleInputChange(e)} />
       &nbsp;
       <button className={css.btn} onClick={(e) => handleSubmit(e)}> Buscar </button>  
     </div>

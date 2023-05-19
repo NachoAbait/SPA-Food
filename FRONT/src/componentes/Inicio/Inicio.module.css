@@ -11,23 +11,22 @@
     position: relative;
     margin: 0  auto;
     display: flex;
-    margin-top: 170px;
-
+    margin-top: 5%;
 }
 .inicioIzq{
-    height: 700px;
+    height: 500px;
     width: 50%;
-
     position: relative;
 }
 
 .inicioDer{
     position: absolute;
-    height: 700px;
+    height: 500px;
     width: 80%;
-    right: -290px;
+    right: -180px;
     top: 0px;
     margin: 0;
+    z-index: 1;
 }
 .animacion{
     height: 100%;
@@ -39,7 +38,7 @@
 .izq1{
     position: relative;
     width: 90%;
-    font-size: 40px;
+    font-size: 168%;
     
 }
 
@@ -50,7 +49,7 @@ span{
 .izq2{
     position: relative;
     width: 100%;
-    font-size: xx-large;
+    font-size: 130%;
 }
 
 .izq3{
@@ -58,15 +57,18 @@ span{
     width: 35%;
     margin-left: 40px;
 }
-
+.izq3 button{
+    font-size: 90%;
+}
 
 .izq4{
     position: relative;
-    width: 70%;
+    width: 90%;
     height: 150px;
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
+
 }
 
 .dato1{
@@ -90,13 +92,14 @@ span{
 .tituloDato h1{
     margin: 0 auto;
     margin-top: 30px;
+    font-size: x-large;
 }
 
 .dato{
     width: 100%;
 }
 .dato p{
-    font-size: xx-large;
+    font-size: x-large;
     margin: 0;
 }
 
@@ -107,8 +110,8 @@ span{
     width: 100%;
     display: flex;
     position: relative;
-    height: 600px;
-    margin-top: 100px;
+    margin-top: 50px;
+    height: 400px;
     margin-bottom: 100px;
     opacity: 0;
 }
@@ -134,7 +137,7 @@ span{
     margin-top: 100px;
     border-radius: 20px;
     border: solid 9px rgb(141, 183, 229);
-
+    overflow: hidden;
 }
 
 .extra3{
@@ -149,15 +152,16 @@ span{
 }
 
 .imgExtra{
-    height: 240px;
+    height: 140px;
     position: relative;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
 .imgExtra2{
-    height: 300px;
+    height: 200px;
     position: relative;
+    margin-top: 20px;
 }
 .foto2{
 max-width: 100%;
@@ -165,8 +169,8 @@ max-width: 100%;
 }
 
 .imgExtra3{
-    margin-top: 50px;
-    height: 200px;
+    margin-top: 30px;
+    height: 120px;
     position: relative;
 }
 

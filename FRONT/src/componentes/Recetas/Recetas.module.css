@@ -14,11 +14,11 @@
     justify-content: center;
     flex-wrap: wrap;
     opacity: 0;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .menuSup{
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .columna{
@@ -35,21 +35,22 @@
 }
 
 .columna label{
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     letter-spacing: 1px;
     color: rgb(141, 183, 229);
 }
 
 .columna select {
-    font-size: large;
+    font-size: small;
     font-weight: bold;
     border-radius: 5px;
-    height: 35px;
+    height: 35%;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
 }
 .columna select option{
     padding-left: 30px;
@@ -57,7 +58,7 @@
 }
 
 .btn{
-    background-color: red;
+    background-color: rgb(127, 113, 113);
 }
 
 .aparece{

@@ -8,8 +8,8 @@
 
 .card{
     position: relative;
-    width: 500px;
-    height: 350px;
+    width: 25%;
+    height: 300px;
     margin: 30px;
 }
 
@@ -63,19 +63,20 @@
 }
 
 .card .back .link {
-    border-top: solid 1px #f3f3f3;
+    border-top: solid 2px #f3f3f3;
     height: 50px;
     line-height: 50px;
+    font-size: 23px;
 }
 
 .card .back .link a {
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     color: black;;
 }
 
 .card .back h3 {
-    font-size: 25px;
+    font-size: 125%;
     margin-top: 20px;
     letter-spacing: 2px;
 }
