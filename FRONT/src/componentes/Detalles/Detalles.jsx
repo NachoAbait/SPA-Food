@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import Barra from "../Barra/Barra"
 import Footer from "../Footer/Footer"
 import { resetDetalle } from "../../ACTIONS";
+import { useParams } from "react-router-dom";
 
-export default function Detalles(props) {
-    console.log("Props:" + props)
+export default function Detalles() {
+    const { id } = useParams();
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -16,7 +17,7 @@ export default function Detalles(props) {
     },[dispatch])
 
     useEffect(() => {
-        dispatch(getDetalle(props.match.params.id))
+        dispatch(getDetalle(id))
     },[dispatch])
 
 

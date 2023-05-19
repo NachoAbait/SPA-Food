@@ -2,8 +2,8 @@ import axios from "axios";
 
 export function getRecipes() {
   return async function (dispatch) {
-    var json = await axios.get("http://localhost:3001/recipes");
-    console.log(json.data)
+    var json = await axios.get("/recipes");
+    console.log(json.data);
     return dispatch({
       type: "GET_RECIPES",
       payload: json.data,
@@ -38,7 +38,7 @@ export function orderRecipeByName(payload) {
 export function getRecipeByName(name) {
   return async function (dispatch) {
     try {
-      var json = await axios.get(`http://localhost:3001/recipes?name=${name}`);
+      var json = await axios.get(`/recipes?name=${name}`);
       return dispatch({
         type: "GET_RECIPE_BY_NAME",
         payload: json.data,
@@ -51,7 +51,7 @@ export function getRecipeByName(name) {
 
 export function postRecipe(payload) {
   return async function (dispatch) {
-    const post = await axios.post("http://localhost:3001/recipes", payload);
+    const post = await axios.post("/recipes", payload);
     console.log(post);
     return post;
   };
@@ -60,7 +60,7 @@ export function postRecipe(payload) {
 export function getDiets() {
   return async function (dispatch) {
     try {
-      var info = await axios.get("http://localhost:3001/diets");
+      var info = await axios.get("/diets");
       return dispatch({
         type: "GET_DIETS",
         payload: info.data,
@@ -74,7 +74,7 @@ export function getDiets() {
 export function getDetalle(id) {
   return async function (dispatch) {
     try {
-      var detalle = await axios.get(`http://localhost:3001/recipes/${id}`);
+      var detalle = await axios.get(`/recipes/${id}`);
       return dispatch({
         type: "GET_DETALLE",
         payload: detalle.data,
@@ -85,15 +85,15 @@ export function getDetalle(id) {
   };
 }
 
-  export function resetDetalle() {
-    return async function (dispatch) {
-      try {
-        return dispatch({
-          type: "RESET_DETALLE",
-          payload: "",
-        });
-      } catch (error) {
-        return { msg: error };
-      }
-    };
+export function resetDetalle() {
+  return async function (dispatch) {
+    try {
+      return dispatch({
+        type: "RESET_DETALLE",
+        payload: "",
+      });
+    } catch (error) {
+      return { msg: error };
+    }
+  };
 }
